@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roman to integer Convertor</title>
+    <style>
+      body {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(209, 172, 50);
+      }
+      .wrapper {
+        border: none;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 25px 10px blue;
+        background-color: rgb(50, 76, 209);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h2 {
+        color: azure;
+      }
+      input {
+        width: 220px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+      }
+      button {
+        width: 220px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(209, 172, 50);
+        color: rgb(50, 76, 209);
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Roman to Integer</h2>
+      <input
+        type="text"
+        placeholder="Roman Number here"
+        id="R_num"
+      /><br /><br />
+      <input
+        type="number"
+        placeholder="Integer will be displayed here"
+        id="Int_number"
+      /><br /><br />
+      <button id="btn_change" onclick="romanToInt(this);">Convert</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
